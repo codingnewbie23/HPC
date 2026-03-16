@@ -45,11 +45,6 @@ import pyvista; print('pyvista:', pyvista.__version__)
 "
 ```
 
-## Step 5 — OOD JupyterLab
-
-Add `vtk` to the **Modules to load** field in the OOD session request
-form. Without this, the `.pth` file will not resolve and pyvista will
-fail to import in the notebook.
 
 > **Note:** Ignore the version conflict warning
 > `pyvista 0.44.2 requires vtk<9.4.0` — the import works fine despite this.
